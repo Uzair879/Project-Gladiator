@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@600;800;900&display=swap');
+.body{
+    background-color: rgb(191, 219, 248);
+}
+.hand {
+    font: Cinzel Decorative;
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Comforter', cursive;
+    font-weight: 700;
+}
+
+.hand1{
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    color: rgb(249, 171, 15);
+    padding-top: 15%;
+    font-size:125px;
+    padding-left: 12%;
+    
+}
+.logo
+{
+    width: 85%;
+    /* margin-left: 15%; */
+
+}
+.beyond
+{
+    color: grey;
+    padding-left: 7%;
+}
+.tarvel
+{
+    padding-left: 5%;
+}
+.learn_more
+{
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 4%;
+    padding-left: 20%; 
+    padding-right: 20%;
+
+}
+.signin
+{
+    text-align: center;
+    margin-right: 20%;
+    margin-top: 4%;
+    padding-left: 25%; 
+    padding-right: 25%;
+}

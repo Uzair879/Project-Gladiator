@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row align-items-center vh-100 ">
+        <div class="col-9 mx-auto ">
+            <div class="card text-center">
+               
+            
+                <div class="card-body ">
+                  
+                  
+                    <div class="row m-2">
+                        <div class="col-sm-6">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Flight</h5>
+                              <p class="card-text">(Flight Name)</p>
+                              <p class="card-text">(Time From - Time To)</p>
+                              <p class="card-text">(Duration)</p>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="card">
+                            <!-- <div class="card-body">
+                                <a href="#" class="btn btn-info" >Economy Class Price</a>
+                            </div>
+                            <div class="card-body">
+                                <a href="#" class="btn btn-info">Business Class Price</a>
+                            </div> -->
+                            <form (ngSubmit)="flightselect()">
+                            <select class="form-floating form-select my-2 " aria-label="Default select example" name="que" [(ngModel)]="select" >
+                                <option selected>Seat-Type</option>
+                                <option value="economy">Economy Class</option>
+                                <option value="business">Business Class</option>
+                            </select>
+                  <button class="btn btn-outline-success" type="submit">Continue</button>
+                </form>
+                  </div>
+                </div>  
+              </div>
+        </div>
+    </div>
+</div>
+
+  </div>

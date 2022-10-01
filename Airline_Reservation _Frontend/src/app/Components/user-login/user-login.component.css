@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+.body
+{
+    background-color: rgb(191, 219, 248) !important;
+}
+.container{
+height: 100%;
+align-content: center;
+
+padding-bottom: 5%;
+}
+
+.card{
+/* height: 370px; */
+margin-top: 10%;
+margin-bottom: auto;
+width: 45%;
+}
+.card-header
+{
+    text-align: center;
+  
+}
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #0793ea;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.btn
+{
+    margin-left: 40%;
+    padding-left:5%;
+    padding-right:5%
+}

@@ -1,0 +1,72 @@
+
+
+
+<div class="outer">
+  <div class="container">
+      
+      <div class="container-fluid">
+          <div class="row align-items-center">
+              
+              
+              <form (ngSubmit)="register()" class="mt-10 p-5" >
+                                          
+                  <h5 class="text-primary p-2 mb-3 center">Registration</h5>          
+                  <div class="form-floating mb-3">
+                      <input [(ngModel)]="user.u_title" type="text" class="form-control" id="floatingInput" placeholder="Username" name="username" >
+                      <label for="floatingInput">Title</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                      <input type="text" [(ngModel)]="user.u_firstname" class="form-control" id="floatingInput" placeholder="Username" name="username" >
+                      <label for="floatingInput">First Name</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                      <input type="text"  [(ngModel)]="user.u_lastname" class="form-control" id="floatingInput" placeholder="Username" name="username" >
+                      <label for="floatingInput">Last Name</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                      <input type="email" [(ngModel)]="user.email" class="form-control" id="floatingInput" placeholder="Username" name="username" >
+                      <label for="floatingInput">Email Id</label>
+                  </div>
+              
+                  <div class="form-floating mb-3">
+                      <input type="password" [(ngModel)]="user.u_password" class="form-control" id="floatingInput" placeholder="Username" name="username" >
+                      <label for="floatingInput">Password</label>
+                  </div>
+                 
+                  <div class="form-floating mb-3">
+                      <input type="date" [(ngModel)]="user.u_dOD" class="form-control" id="floatingInput" placeholder="Username" name="username" >
+                      <label for="floatingInput">Date Of Birth</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                      <input type="" class="form-control" [(ngModel)]="user.u_contact" id="floatingInput" placeholder="Username" name="username" >
+                      <label for="floatingInput">Phone Number</label>
+                  </div>
+          
+                <select class="form-floating form-select my-2 " aria-label="Default select example" name="que" [(ngModel)]="user.qus" >
+                  <option selected>Security Question</option>
+                  <option value="Pet">Whats is your pet name?</option>
+                  <option value="Sportsman">Who is your Favourite Sportsman?</option>
+                  <option value="Friend">Who is your best friend</option>
+                </select>
+
+                <div class="form-floating mb-3">
+                  <input type="text"  [(ngModel)]="user.ans" class="form-control" id="floatingInput" placeholder="Answer" name="answer" >
+                  <label for="floatingInput">Answer</label>
+              </div>
+
+               
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn btn-primary">Sign Up</button>
+                  <button class="btn btn-secondary" type="button">Cancel</button>
+                </div>
+                
+          </form>
+
+              </div>
+              <div class="col-md-2">
+              </div>
+          </div>
+      
+  </div>
+  </div>
+

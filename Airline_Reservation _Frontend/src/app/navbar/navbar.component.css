@@ -1,0 +1,17 @@
+.logo
+{
+   width: 25%;
+}
+
+.navpad
+{
+    padding-left: 15%;
+}   
+.navtext
+{   
+    color: rgba(49, 175, 229, 0.854);
+}
+nav a.active{
+   
+    color: rgb(228, 21, 104);
+}

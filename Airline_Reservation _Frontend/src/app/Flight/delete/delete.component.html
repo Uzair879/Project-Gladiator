@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-6 mx-auto my-2">
+            <div class="card text-center">
+                <h5 class="card-header center-text">Delete Flight</h5>
+                <div class="card-body ">
+                  <form (ngSubmit)="fdelete()">
+                  <div class="form-floating mb-3">   
+                    <input type="number" id="floatingPassword" name="flight_id" [(ngModel)]="f.flight_id" >
+                    <label for="floatingPassword">Flight id</label>
+                  </div>
+                  <button class="btn btn-danger" type="submit">Delete</button>
+                </form>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
