@@ -1,0 +1,86 @@
+<div class="outer">
+    <div class="container"></div>
+           <div class="container-fluid">
+                       <div class="row align-items-center pad ">
+                           <div class="col-6 mx-auto"> 
+                               <div class="card text-center">
+                                   <h5 class="card-header center-text">Search Flight</h5>
+                               <form (ngSubmit)="search()">
+                                   <div class="card-body">
+                                     <div class="row">
+                                         <div class="col-6">
+                                           <div class="form-floating mb-3">
+                                               <input type="checkbox" class="form-control" id="floatingInput" (click)="fun()" name="oneway"  >
+                                               <label for="floatingInput">One Way</label>
+                                           </div>
+   
+                                           <div class="form-floating mb-3">
+                                               <div class="form-floating mb-3">
+                                                   <select class="form-floating form-select my-2 " aria-label="Default select example" name="from" [(ngModel)] = f.flight_from  >
+                                                       <option value="">Select City</option>
+                                                       <option value="Achalpur">Achalpur</option>
+                                                       <option value="Ahiri">Ahiri</option>
+                                                       <option value="Ahmadnagar">Ahmadnagar</option>
+                                                       <option value="Ahmadpur">Ahmadpur</option>
+                                                       <option value="Airoli">Airoli</option>
+                                                       <option value="Ajra">Ajra</option>
+                                                       <option value="Akalkot">Akalkot</option>
+                                                     </select>
+                                               </div>
+                                               <label for="floatingInput">From</label>
+                                           </div> 
+   
+                                           <div class="form-floating mb-3">
+                                               <input type="date" class="form-control" id="floatingInput" name="flight_departure" [(ngModel)] = f.flight_departure_date >
+                                               <label for="floatingInput">Departure Date</label>
+                                           </div>
+                                       </div>
+   
+                                       <div class="col-6">
+                                           <div class="form-floating mb-3">
+                                               <input type="checkbox" class="form-control" id="floatingInput" (click)="fun1()" >
+                                               <label for="floatingInput"> Round Trip</label>
+                                           </div>
+   
+                                           <div class="form-floating mb-3">
+                                               <div class="form-floating mb-3">
+                                                   <select class="form-floating form-select my-2 " aria-label="Default select example" name="To"  [(ngModel)] = f.flight_to   >
+                                                       <option value="">Select City</option>
+                                                       <option value="Achalpur">Achalpur</option>
+                                                       <option value="Ahiri">Ahiri</option>
+                                                       <option value="Ahmadnagar">Ahmadnagar</option>
+                                                       <option value="Ahmadpur">Ahmadpur</option>
+                                                       <option value="Airoli">Airoli</option>
+                                                       <option value="Ajra">Ajra</option>
+                                                       <option value="Akalkot">Akalkot</option>
+                                                     </select>
+                                               </div>
+                                               <label for="floatingInput">To</label>
+                                           </div>
+   
+                                           <div class="form-floating mb-3">
+                                               <input type="date" [attr.disabled]="from" [value]="return" class="form-control" id="floatingInput" name="Return" [(ngModel)] = f.flight_return_date  >
+                                               <label for="floatingInput">Return Date</label>
+                                           </div>
+                                       </div>
+                                       <div class="col-6">
+                                           <div class="form-floating mb-3">
+                                               <input type="text" class="form-control" id="floatingInput"  name="Passenger" [(ngModel)] = f.passengercount >
+                                               <label for="floatingInput">Passenger(s)</label>
+                                           </div>
+                                       </div>  
+                                     </div>
+                                     
+                                         
+                             </div>
+                             <div class="d-grid gap-3 ms-3 mb-3">
+                               <button  class="btn btn-primary" type="submit">Search</button>
+                             </div>
+                            </form>
+                           
+                                     
+                                   </div>
+                                 </div>
+                           </div>
+                       </div>
+         </div>

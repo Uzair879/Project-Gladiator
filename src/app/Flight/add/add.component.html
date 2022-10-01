@@ -1,0 +1,70 @@
+<div class="outer">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row align-items-center vh-100">
+               
+                <div class="container">
+                    <div class="row align-items-center vh-100">
+                        <div class="col-6 mx-auto ">
+                            <div class="card text-center">
+                                <h5 class="card-header center-text">Add Flight</h5>
+                            
+                                <div class="card-body">
+                                  
+                                    <form (ngSubmit)="addflight()" class="mt-7 p-3" >
+                                      
+                                        
+                                            <div class="form-floating mb-3">
+                                                <input type="text"  name="flight_name" id="floatingInput" [(ngModel)]="flight.flight_name">
+                                                <label for="floatingInput">Flight Name</label>
+                                            </div>
+
+                                            
+                                            <div class="form-floating mb-3">
+                                                <input type="text"  name="flight_from" [(ngModel)]="flight.flight_from">
+                                                <label for="floatingInput">From</label>      </div>
+                                            <div class="form-floating mb-3">
+
+                                                <input type="text"  name="flight_to" [(ngModel)]="flight.flight_to">
+                                                <label for="floatingInput">To</label>
+                                            </div>
+
+                                            <div class="form-floating mb-3">
+                                                <input type="date"  name="flight_depat" [(ngModel)]="flight.flight_departure" >
+                                                <label for="floatingInput">Depart</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="date"  name="flight_arrival" [(ngModel)]="flight.flight_arrival">
+                                                <label for="floatingInput">Arrive</label>
+                                            </div> 
+                                            <div class="form-floating mb-3">
+                                                <input type="number"  name="flight_duration" [(ngModel)]="flight.flight_duration">
+                                                <label for="floatingInput">Duration</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="text"  name="flight_cabin" [(ngModel)]="flight.flight_cabin">
+                                                <label for="floatingInput">Cabin</label>
+                                            </div>
+
+                                         
+                                          <div class="d-grid gap-2">
+                                            <button class="btn btn-primary" type="submit">Add</button>
+                                            
+                                          </div>
+                                          
+                                    </form>
+                        
+                                  
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        
+    </div>
+    </div>
